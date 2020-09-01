@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <!-- <meta http-equiv="Refresh" content="1" /> -->
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        div {
+            width: 1000px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 20px 20px 10px #888888;
+        }
+        ul li {
+            position: absolute;
+            top: 0;
+            width: 650px;
+            height: 500px;
+        }
+
+        div ul .li_0 {
+            left: 0;
+        }
+
+
+        div ul .li_1 {
+            left: 130px;
+        }
+
+
+        div ul .li_2 {
+            left: 260px;
+        }
+
+
+        div ul .li_3 {
+            left: 390px;
+        }
+
+
+        div ul .li_4 {
+            left: 510px;
+        }
+        div ul .li_5 {
+            left: 640px;
+        }
+        div ul .li_6 {
+            left: 770px;
+        }
+
+
+        div ul li img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li class="li_0"><img src="images/01.jfif" alt="图片"></li>
+            <li class="li_1"><img src="images/02.jfif" alt="图片"></li>
+            <li class="li_2"><img src="images/03.jfif" alt="图片"></li>
+            <li class="li_3"><img src="images/04.jfif" alt="图片"></li>
+            <li class="li_4"><img src="images/05.jfif" alt="图片"></li>
+            <li class="li_5"><img src="images/06.jfif" alt="图片"></li>
+            <li class="li_6"><img src="images/07.jfif" alt="图片"></li>
+        </ul>
+
+    </div>
+
+    <script>
+        
+        $(".li_0").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "600px"}, 700);
+            $(".li_2").animate({"left": "660px"}, 700);
+            $(".li_3").animate({"left": "720px"}, 700);
+            $(".li_4").animate({"left": "780px"}, 700);
+            $(".li_5").animate({"left": "840px"}, 700);
+            $(".li_6").animate({"left": "900px"}, 700);
+        })
+        $(".li_1").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "100px"}, 700);
+            $(".li_2").animate({"left": "660px"}, 500);
+            $(".li_3").animate({"left": "720px"}, 500);
+            $(".li_4").animate({"left": "780px"}, 500);
+            $(".li_5").animate({"left": "840px"}, 500);
+            $(".li_6").animate({"left": "900px"}, 500);
+        })
+        $(".li_2").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "100px"}, 500);
+            $(".li_2").animate({"left": "150px"}, 700);
+            $(".li_3").animate({"left": "720px"}, 500);
+            $(".li_4").animate({"left": "780px"}, 500);
+            $(".li_5").animate({"left": "840px"}, 500);
+            $(".li_6").animate({"left": "900px"}, 500);
+        })
+        $(".li_3").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "100px"}, 500);
+            $(".li_2").animate({"left": "150px"}, 500);
+            $(".li_3").animate({"left": "200px"}, 700);
+            $(".li_4").animate({"left": "780px"}, 500);
+            $(".li_5").animate({"left": "840px"}, 500);
+            $(".li_6").animate({"left": "900px"}, 500);
+        })
+        $(".li_4").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "100px"}, 500);
+            $(".li_2").animate({"left": "150px"}, 500);
+            $(".li_3").animate({"left": "200px"}, 500);
+            $(".li_4").animate({"left": "250px"}, 700);
+            $(".li_5").animate({"left": "840px"}, 500);
+            $(".li_6").animate({"left": "900px"}, 500);
+        })
+        $(".li_5").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "100px"}, 500);
+            $(".li_2").animate({"left": "150px"}, 500);
+            $(".li_3").animate({"left": "200px"}, 500);
+            $(".li_4").animate({"left": "250px"}, 500);
+            $(".li_5").animate({"left": "300px"}, 700);
+            $(".li_6").animate({"left": "900px"}, 500);
+        })
+        $(".li_6").mouseenter(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "100px"}, 500);
+            $(".li_2").animate({"left": "150px"}, 500);
+            $(".li_3").animate({"left": "200px"}, 500);
+            $(".li_4").animate({"left": "250px"}, 500);
+            $(".li_5").animate({"left": "300px"}, 500);
+            $(".li_6").animate({"left": "350px"}, 700);
+        })
+
+        $("li").mouseleave(function () {
+            $("li").stop(true);
+            $(".li_1").animate({"left": "130px"}, 700);
+            $(".li_2").animate({"left": "260px"}, 700);
+            $(".li_3").animate({"left": "390px"}, 700);
+            $(".li_4").animate({"left": "510px"}, 700);
+            $(".li_5").animate({"left": "640px"}, 700);
+            $(".li_6").animate({"left": "770px"}, 700);
+        })
+    </script>
+</body>
+
+</html>
