@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #bfa;
+        }
+
+        .box {
+            width: 95%;
+            margin-top: 200px;
+            background-color:#fff;
+            border-radius: 50px;
+            justify-content: center;
+            padding: 10px 30px;
+        }
+        .img_box {
+            border-bottom: 3px solid #ccc;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .img_box:hover {
+            box-shadow: 10px 10px 5px #888888;
+        }
+        .img_box img:hover {
+            transform: scale(1.1);
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container box">
+        <div class="row item">
+
+            <!-- <div class="col-md-3">
+                <img src="" alt="">
+                <h3></h3>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+    <script src="../js/jq.min.js"></script>
+
+    <script>
+        $.ajax({
+            url: "http://127.0.0.1//w/website/findGoodsTypeList",
+            type: "get",
+            data: {},
+            success: function (r) {
+                for (var i = 0; i < r.data.length; i++) {
+                    $(".item").append(
+                        `<div class="col-lg-2  col-md-3 col-sm-4 col-xs-6 img_box">
+                             <a href="02.html?aa=${r.data[i].name}">
+                                <img src="${r.data[i].icon}" alt="" width="100%">
+                             <h3>${r.data[i].name}</h3></a>
+                         </div>`
+                    )
+
+
+                }
+
+
+            }
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
