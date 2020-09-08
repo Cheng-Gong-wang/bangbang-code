@@ -27,6 +27,7 @@
         .top ul {
             float: right;
             margin-right: 80px;
+            margin-bottom: 0px;
         }
 
         .top ul li {
@@ -86,11 +87,11 @@
     <div class="top cf">
         <ul>
             <li>
-                <a href="06.html">登录</a>
+                <a href="log_in.html">登录</a>
             </li>
             <li class="line">|</li>
             <li>
-                <a href="05.html">注册</a>
+                <a href="sign_in.html">注册</a>
             </li>
         </ul>
     </div>
@@ -119,16 +120,12 @@
             </div>
             <button type="button" class="btn btn-default btn-lg active">注册用户</button>
         </form>
-
-
     </div>
 
     <script src="../js/jq.min.js"></script>
 
     <script>
         $(".btn").click(function () {
-
-
 
             $.ajax({
                 url: "http://192.168.1.107:3000/users/register",
@@ -142,7 +139,7 @@
                 success: function (r) {
                     console.log(r);
                     if (r.state == 0) {
-                        window.location = "06.html";
+                        window.location = "log_in.html";
                     } else if (r.state == 1) {
                         alert("用户名已存在！")
                     }
