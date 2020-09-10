@@ -1,0 +1,117 @@
+.top_war {
+    /* margin-top: 158px; */
+    background-color: #ed445b;
+    line-height: 42px;
+    position: fixed;
+    left: 0;
+    top: 154px;
+    width: 100%;
+    z-index: 9999;
+}
+.top_war_ul {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+}
+.top_war_ul li {
+    padding: 0 10px;
+    transition: all .5s;
+
+
+}
+.top_war_ul li:hover {
+    background-color: #f99;
+}
+.top_war_ul li:hover a {
+    color: #000;
+    text-decoration: none;
+}
+.top_war_ul a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-align: none;
+}
+.banner-warpper {
+    margin-top: 200px;
+    background-color: #bfa;
+}
+
+.banner_bottom .unit_img {
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px #888888;
+    overflow: hidden;
+    margin: 20px 0;
+    
+
+
+}
+.banner_bottom .unit_img img {
+    width: 230px;
+    height: 230px;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .5s;
+   
+}
+.banner_bottom .unit_img img:hover {
+    transform: scale(1.2);
+}
+.banner_bottom .unit_img .prouuct_title {
+    width: 100%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #6c6c6c;
+}
+.banner_bottom .unit_img .price_div {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner_bottom .unit_img .price_div span:nth-child(1) {
+    color: red;
+    font-size: 20px;
+    font-weight: border;
+}
+.banner_bottom .row {
+    margin-bottom: 50px;
+}
+.paging ul {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    box-shadow:10px 10px 5px #888888;
+
+}
+.paging ul li {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    user-select: none;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-shadow:10px 10px 5px #888888;
+    transition: all .3s;
+}
+.paging ul li:hover {
+    font-size: 22px;
+}
+.cur{
+    background-color: orange;
+}
+
