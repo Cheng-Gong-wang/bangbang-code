@@ -87,3 +87,14 @@
 	Person.sayHello(per)
 	// per.sayHello()
 }
+{
+	class Person {
+		//es7添加静态属性
+		static prop = "flower"
+		constructor(name="zhangsan") {
+		    this.name = name
+		}
+	}
+	// Person.prop="test";//es6静态属性
+	console.log(Person.prop)
+}

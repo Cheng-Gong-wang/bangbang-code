@@ -5,7 +5,7 @@ console.log(a,test,sayHello) */
 console.log(test)
 console.log(test.default.a)
 console.log(test.default.fn) */
-// import test from "./chapter5-4-2.js"
+import test from "./chapter5-4-2.js"
 console.log(test)
 console.log(test.a)
 console.log(test.fn)
